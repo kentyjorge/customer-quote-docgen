@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>true</isManagedUsingStdDesigner>
+    <name>CustomerQuoteTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Group:Line:ParentId ISBLANK true false IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(Group:Line:ParentId),true,false)</formulaExpression>
+        <formulaResultPath>Group:Line:IF_Parent</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000001</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moD8</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moD8</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Group:GroupName ISNOTBLANK true false IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(Group:GroupName),true,false)</formulaExpression>
+        <formulaResultPath>IF_HasGroups</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000002</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moD9</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moD9</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:PartnerName ISNOTBLANK true false IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(PartnerName),true,false)</formulaExpression>
+        <formulaResultPath>IF_Partner</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000004</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDB</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDB</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:PartnerName ISNOTBLANK false true IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(PartnerName),false,true)</formulaExpression>
+        <formulaResultPath>IF_no_Partner</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000005</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDC</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDC</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:QDiscount ISNOTBLANK true false IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(QDiscount),true,false)</formulaExpression>
+        <formulaResultPath>IF_has_discount</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000006</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDD</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDD</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:QDiscount ISNOTBLANK false true IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(QDiscount),false,true)</formulaExpression>
+        <formulaResultPath>IF_no_discount</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000007</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDE</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDE</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Group:GroupName ISNOTBLANK false true IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(Group:GroupName),false,true)</formulaExpression>
+        <formulaResultPath>IF_no_Groups</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000003</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDA</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDA</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000013</globalKey>
+        <inputFieldName>BillingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDJ</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDJ</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000014</globalKey>
+        <inputFieldName>BillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDK</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDK</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000015</globalKey>
+        <inputFieldName>QuoteNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDL</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDL</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000016</globalKey>
+        <inputFieldName>ExpirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDM</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDM</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExpDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:FlatLine:ParentId ISBLANK true false IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(FlatLine:ParentId),true,false)</formulaExpression>
+        <formulaResultPath>FlatLine:IF_Parent</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000008</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDF</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDF</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000010</globalKey>
+        <inputFieldName>AccountName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDG</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDG</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000011</globalKey>
+        <inputFieldName>BillingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDH</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDH</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000012</globalKey>
+        <inputFieldName>BillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDI</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDI</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000069</globalKey>
+        <inputFieldName>IF_no_discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDr</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDr</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>IF_no_discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000070</globalKey>
+        <inputFieldName>FlatLine:IF_Parent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDs</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDs</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>FlatLine:IF_Parent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000071</globalKey>
+        <inputFieldName>PartnerName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDt</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDt</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PartnerName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000072</globalKey>
+        <inputFieldName>PartnerType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDu</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDu</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PartnerType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000065</globalKey>
+        <inputFieldName>FlatLine:NetTotalPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDn</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDn</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>FlatLine:NetTotalPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000066</globalKey>
+        <inputFieldName>IF_Partner</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDo</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDo</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>IF_Partner</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000067</globalKey>
+        <inputFieldName>IF_no_Partner</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDp</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDp</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>IF_no_Partner</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000068</globalKey>
+        <inputFieldName>IF_has_discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDq</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDq</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>IF_has_discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000077</globalKey>
+        <inputFieldName>FlatLine:fCQL:ProductName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDz</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDz</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:fCQL:ProductName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000073</globalKey>
+        <inputFieldName>QDiscount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDv</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDv</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QDiscount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000074</globalKey>
+        <inputFieldName>FlatLine:ParentId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDw</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDw</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:ParentId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000075</globalKey>
+        <inputFieldName>Group:Line:pDiscount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDx</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDx</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:pDiscount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000076</globalKey>
+        <inputFieldName>Group:Line:CQL:pDiscount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDy</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDy</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:CQL:pDiscount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000021</globalKey>
+        <inputFieldName>Group:Line:IF_Parent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDR</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDR</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>Group:Line:IF_Parent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000081</globalKey>
+        <inputFieldName>FlatLine:fCQL:NetUnitPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moE3</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moE3</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:fCQL:NetUnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000030</globalKey>
+        <inputFieldName>Group:GroupName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDS</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDS</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:GroupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000082</globalKey>
+        <inputFieldName>FlatLine:fCQL:NetTotalPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moE4</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moE4</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:fCQL:NetTotalPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000031</globalKey>
+        <inputFieldName>Group:GroupStart</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDT</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDT</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:GroupStart</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000032</globalKey>
+        <inputFieldName>Group:GroupTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDU</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDU</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:GroupTotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000017</globalKey>
+        <inputFieldName>GrandTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDN</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDN</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>GrandTotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000018</globalKey>
+        <inputFieldName>CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDO</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDO</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000078</globalKey>
+        <inputFieldName>FlatLine:fCQL:Quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moE0</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moE0</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:fCQL:Quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000019</globalKey>
+        <inputFieldName>IF_HasGroups</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDP</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDP</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>IF_HasGroups</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000079</globalKey>
+        <inputFieldName>FlatLine:fCQL:ListPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moE1</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moE1</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:fCQL:ListPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000020</globalKey>
+        <inputFieldName>IF_no_Groups</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDQ</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDQ</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>IF_no_Groups</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000080</globalKey>
+        <inputFieldName>FlatLine:fCQL:Discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moE2</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moE2</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:fCQL:Discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000044</globalKey>
+        <inputFieldName>Group:Line:NetUnitPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDZ</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDZ</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:Line:NetUnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000040</globalKey>
+        <inputFieldName>Group:Line:ProductName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDV</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDV</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:ProductName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000041</globalKey>
+        <inputFieldName>Group:Line:Quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDW</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDW</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:Quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000042</globalKey>
+        <inputFieldName>Group:Line:ListPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDX</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDX</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:Line:ListPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000043</globalKey>
+        <inputFieldName>Group:Line:Discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDY</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDY</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:Discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000046</globalKey>
+        <inputFieldName>Group:Line:ParentId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDb</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDb</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:ParentId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000050</globalKey>
+        <inputFieldName>Group:Line:CQL:ProductName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDc</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDc</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:CQL:ProductName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000051</globalKey>
+        <inputFieldName>Group:Line:CQL:Quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDd</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDd</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:CQL:Quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000052</globalKey>
+        <inputFieldName>Group:Line:CQL:ListPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDe</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDe</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:Line:CQL:ListPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000045</globalKey>
+        <inputFieldName>Group:Line:NetTotalPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDa</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDa</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:Line:NetTotalPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000061</globalKey>
+        <inputFieldName>FlatLine:Quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDj</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDj</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:Quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000062</globalKey>
+        <inputFieldName>FlatLine:ListPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDk</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDk</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>FlatLine:ListPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000063</globalKey>
+        <inputFieldName>FlatLine:Discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDl</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDl</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:Discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000064</globalKey>
+        <inputFieldName>FlatLine:NetUnitPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDm</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDm</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>FlatLine:NetUnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000053</globalKey>
+        <inputFieldName>Group:Line:CQL:Discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDf</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDf</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Group:Line:CQL:Discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000054</globalKey>
+        <inputFieldName>Group:Line:CQL:NetUnitPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDg</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDg</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:Line:CQL:NetUnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000055</globalKey>
+        <inputFieldName>Group:Line:CQL:NetTotalPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDh</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDh</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Group:Line:CQL:NetTotalPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f5b2c3d4-6000-4000-8000-000000000060</globalKey>
+        <inputFieldName>FlatLine:ProductName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteTransform</name>
+        <omniDataTransformation>0kdbm000000moDi</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000moDi</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FlatLine:ProductName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;PartnerType&quot; : &quot;Reseller&quot;,
+  &quot;BillingCity&quot; : &quot;Brooklyn&quot;,
+  &quot;PartnerName&quot; : &quot;Robot Resellers&quot;,
+  &quot;FlatLine&quot; : [ {
+    &quot;NetUnitPrice&quot; : &quot;$10,000.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Additional API&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$8,000&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;ListPrice&quot; : &quot;$15,000.00&quot;
+  }, {
+    &quot;NetUnitPrice&quot; : &quot;$0.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;QuantumBit Services Project&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$0&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;ListPrice&quot; : &quot;$0.00&quot;
+  }, {
+    &quot;ParentId&quot; : &quot;0QLbm000003OZFsGAO&quot;,
+    &quot;NetUnitPrice&quot; : &quot;$300.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Data Normalization Expert&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$1,920&quot;,
+    &quot;Quantity&quot; : 8,
+    &quot;ListPrice&quot; : &quot;$300.00&quot;
+  }, {
+    &quot;ParentId&quot; : &quot;0QLbm000003OZFsGAO&quot;,
+    &quot;NetUnitPrice&quot; : &quot;$300.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Module Extension Engineer&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$1,920&quot;,
+    &quot;Quantity&quot; : 8,
+    &quot;ListPrice&quot; : &quot;$300.00&quot;
+  }, {
+    &quot;ParentId&quot; : &quot;0QLbm000003OZFsGAO&quot;,
+    &quot;NetUnitPrice&quot; : &quot;$350.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Program Director&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$2,240&quot;,
+    &quot;Quantity&quot; : 8,
+    &quot;ListPrice&quot; : &quot;$350.00&quot;
+  }, {
+    &quot;ParentId&quot; : &quot;0QLbm000003OZFsGAO&quot;,
+    &quot;NetUnitPrice&quot; : &quot;$300.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Project Manager&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$1,920&quot;,
+    &quot;Quantity&quot; : 8,
+    &quot;ListPrice&quot; : &quot;$300.00&quot;
+  }, {
+    &quot;ParentId&quot; : &quot;0QLbm000003OZFsGAO&quot;,
+    &quot;NetUnitPrice&quot; : &quot;$300.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Quality Assurance Engineer&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$1,920&quot;,
+    &quot;Quantity&quot; : 8,
+    &quot;ListPrice&quot; : &quot;$300.00&quot;
+  }, {
+    &quot;ParentId&quot; : &quot;0QLbm000003OZFsGAO&quot;,
+    &quot;NetUnitPrice&quot; : &quot;$375.00&quot;,
+    &quot;Discount&quot; : &quot;25&quot;,
+    &quot;ProductName&quot; : &quot;Solutions Architect&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$2,400&quot;,
+    &quot;Quantity&quot; : 8,
+    &quot;ListPrice&quot; : &quot;$500.00&quot;
+  }, {
+    &quot;NetUnitPrice&quot; : &quot;$450.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Additional API Flex (100M)&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$360&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;ListPrice&quot; : &quot;$450.00&quot;
+  }, {
+    &quot;NetUnitPrice&quot; : &quot;$1,450.00&quot;,
+    &quot;Discount&quot; : &quot;0&quot;,
+    &quot;ProductName&quot; : &quot;Additional API Gov&quot;,
+    &quot;NetTotalPrice&quot; : &quot;$1,160&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;ListPrice&quot; : &quot;$1,450.00&quot;
+  } ],
+  &quot;QuoteNumber&quot; : &quot;00000052&quot;,
+  &quot;ExpirationDate&quot; : &quot;08/28/2026&quot;,
+  &quot;BillingStreet&quot; : &quot;100 Main Street&quot;,
+  &quot;GrandTotal&quot; : &quot;$21,840&quot;,
+  &quot;CreatedDate&quot; : &quot;07/29/2026&quot;,
+  &quot;BillingPostalCode&quot; : &quot;11201&quot;,
+  &quot;QDiscount&quot; : &quot;34.414&quot;,
+  &quot;BillingState&quot; : &quot;NY&quot;,
+  &quot;AccountName&quot; : &quot;Shutterfly&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <targetOutputFileName>Customer_Quote(Version 1)</targetOutputFileName>
+    <type>Transform</type>
+    <uniqueName>CustomerQuoteTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
