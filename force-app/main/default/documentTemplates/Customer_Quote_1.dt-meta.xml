@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DocumentTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <documentGenerationMechanism>ServerSide</documentGenerationMechanism>
-    <extractOmniDataTransformName>CustomerQuoteExtract</extractOmniDataTransformName>
+    <extractOmniDataTransformName>RCQuoteProposalExtractCopy1785179068997</extractOmniDataTransformName>
     <fileExtension>docx</fileExtension>
     <hasBatchableSection>false</hasBatchableSection>
     <isActive>false</isActive>
     <isSectionProcessed>false</isSectionProcessed>
-    <mapperOmniDataTransformName>CustomerQuoteTransform</mapperOmniDataTransformName>
+    <mapperOmniDataTransformName>RCQuoteProposalTransformCopy1785179069243</mapperOmniDataTransformName>
     <name>Customer_Quote</name>
     <shouldDisplayUnmappedToken>false</shouldDisplayUnmappedToken>
     <shouldExtractEmbeddedTmplToken>false</shouldExtractEmbeddedTmplToken>
-    <status>Draft</status>
+    <status>Archived</status>
     <tokenMappingMethodType>OmniDataTransform</tokenMappingMethodType>
     <tokenMappingType>JSON</tokenMappingType>
     <type>MicrosoftWord</type>

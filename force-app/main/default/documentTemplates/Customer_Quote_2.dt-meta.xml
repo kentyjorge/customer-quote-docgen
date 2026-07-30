@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <documentGenerationMechanism>ServerSide</documentGenerationMechanism>
+    <extractOmniDataTransformName>CustomerQuoteExtract</extractOmniDataTransformName>
+    <fileExtension>docx</fileExtension>
+    <hasBatchableSection>false</hasBatchableSection>
+    <isActive>true</isActive>
+    <isSectionProcessed>false</isSectionProcessed>
+    <mapperOmniDataTransformName>CustomerQuoteTransform</mapperOmniDataTransformName>
+    <name>Customer_Quote</name>
+    <shouldDisplayUnmappedToken>false</shouldDisplayUnmappedToken>
+    <shouldExtractEmbeddedTmplToken>false</shouldExtractEmbeddedTmplToken>
+    <status>Active</status>
+    <tokenList>AccountName,BillingStreet,BillingCity,BillingState,BillingPostalCode,IF_Partner:PartnerName,IF_Partner:PartnerType,IF_Partner:IF_HasGroups:Group:GroupName,IF_Partner:IF_HasGroups:Group:GroupStart,IF_Partner:IF_HasGroups:Group:GroupTotal,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:ProductName,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:Quantity,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:ListPrice,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:Discount,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:NetUnitPrice,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:NetTotalPrice,IF_Partner:IF_HasGroups:Group:Line:IF_Parent:pDiscount,IF_Partner:IF_HasGroups:Group:Line:CQL:ProductName,IF_Partner:IF_HasGroups:Group:Line:CQL:Quantity,IF_Partner:IF_HasGroups:Group:Line:CQL:ListPrice,IF_Partner:IF_HasGroups:Group:Line:CQL:Discount,IF_Partner:IF_HasGroups:Group:Line:CQL:NetUnitPrice,IF_Partner:IF_HasGroups:Group:Line:CQL:NetTotalPrice,IF_Partner:IF_HasGroups:Group:Line:CQL:pDiscount,IF_Partner:IF_no_Groups:FlatLine:IF_Parent:ProductName,IF_Partner:IF_no_Groups:FlatLine:IF_Parent:Quantity,IF_Partner:IF_no_Groups:FlatLine:IF_Parent:ListPrice,IF_Partner:IF_no_Groups:FlatLine:IF_Parent:Discount,IF_Partner:IF_no_Groups:FlatLine:IF_Parent:NetUnitPrice,IF_Partner:IF_no_Groups:FlatLine:IF_Parent:NetTotalPrice,IF_Partner:IF_no_Groups:FlatLine:fCQL:ProductName,IF_Partner:IF_no_Groups:FlatLine:fCQL:Quantity,IF_Partner:IF_no_Groups:FlatLine:fCQL:ListPrice,IF_Partner:IF_no_Groups:FlatLine:fCQL:Discount,IF_Partner:IF_no_Groups:FlatLine:fCQL:NetUnitPrice,IF_Partner:IF_no_Groups:FlatLine:fCQL:NetTotalPrice,IF_has_discount:QDiscount,IF_has_discount:GrandTotal,IF_no_discount:GrandTotal,IF_no_Partner:IF_HasGroups:Group:GroupName,IF_no_Partner:IF_HasGroups:Group:GroupStart,IF_no_Partner:IF_HasGroups:Group:GroupTotal,IF_no_Partner:IF_HasGroups:Group:Line:IF_Parent:ProductName,IF_no_Partner:IF_HasGroups:Group:Line:IF_Parent:Quantity,IF_no_Partner:IF_HasGroups:Group:Line:IF_Parent:ListPrice,IF_no_Partner:IF_HasGroups:Group:Line:IF_Parent:Discount,IF_no_Partner:IF_HasGroups:Group:Line:IF_Parent:NetUnitPrice,IF_no_Partner:IF_HasGroups:Group:Line:IF_Parent:NetTotalPrice,IF_no_Partner:IF_HasGroups:Group:Line:CQL:ProductName,IF_no_Partner:IF_HasGroups:Group:Line:CQL:Quantity,IF_no_Partner:IF_HasGroups:Group:Line:CQL:ListPrice,IF_no_Partner:IF_HasGroups:Group:Line:CQL:Discount,IF_no_Partner:IF_HasGroups:Group:Line:CQL:NetUnitPrice,IF_no_Partner:IF_HasGroups:Group:Line:CQL:NetTotalPrice,IF_no_Partner:IF_no_Groups:FlatLine:IF_Parent:ProductName,IF_no_Partner:IF_no_Groups:FlatLine:IF_Parent:Quantity,IF_no_Partner:IF_no_Groups:FlatLine:IF_Parent:ListPrice,IF_no_Partner:IF_no_Groups:FlatLine:IF_Parent:Discount,IF_no_Partner:IF_no_Groups:FlatLine:IF_Parent:NetUnitPrice,IF_no_Partner:IF_no_Groups:FlatLine:IF_Parent:NetTotalPrice,IF_no_Partner:IF_no_Groups:FlatLine:fCQL:ProductName,IF_no_Partner:IF_no_Groups:FlatLine:fCQL:Quantity,IF_no_Partner:IF_no_Groups:FlatLine:fCQL:ListPrice,IF_no_Partner:IF_no_Groups:FlatLine:fCQL:Discount,IF_no_Partner:IF_no_Groups:FlatLine:fCQL:NetUnitPrice,IF_no_Partner:IF_no_Groups:FlatLine:fCQL:NetTotalPrice</tokenList>
+    <tokenMappingMethodType>OmniDataTransform</tokenMappingMethodType>
+    <tokenMappingType>JSON</tokenMappingType>
+    <type>MicrosoftWord</type>
+    <uniqueName>Customer_Quote_2</uniqueName>
+    <usageType>Revenue_Lifecycle_Management</usageType>
+    <versionNumber>2</versionNumber>
+</DocumentTemplate>
