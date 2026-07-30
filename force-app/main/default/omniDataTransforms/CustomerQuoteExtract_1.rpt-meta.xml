@@ -13,7 +13,7 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>ORDER BY</filterOperator>
-        <filterValue>SortOrder__c</filterValue>
+        <filterValue>SortOrder</filterValue>
         <globalKey>e4a1b2c3-5000-4000-8000-000000000014</globalKey>
         <inputObjectName>QuoteLineItem</inputObjectName>
         <inputObjectQuerySequence>10.0</inputObjectQuerySequence>
@@ -176,7 +176,7 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>ORDER BY</filterOperator>
-        <filterValue>SortOrder__c</filterValue>
+        <filterValue>SortOrder</filterValue>
         <globalKey>e4a1b2c3-5000-4000-8000-000000000011</globalKey>
         <inputObjectName>QuoteLineItem</inputObjectName>
         <inputObjectQuerySequence>8.0</inputObjectQuerySequence>
@@ -647,7 +647,7 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>ORDER BY</filterOperator>
-        <filterValue>SortOrder__c</filterValue>
+        <filterValue>SortOrder</filterValue>
         <globalKey>e4a1b2c3-5000-4000-8000-000000000006</globalKey>
         <inputObjectName>QuoteLineItem</inputObjectName>
         <inputObjectQuerySequence>5.0</inputObjectQuerySequence>
@@ -703,7 +703,7 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>ORDER BY</filterOperator>
-        <filterValue>SortOrder__c</filterValue>
+        <filterValue>SortOrder</filterValue>
         <globalKey>e4a1b2c3-5000-4000-8000-000000000009</globalKey>
         <inputObjectName>QuoteLineItem</inputObjectName>
         <inputObjectQuerySequence>7.0</inputObjectQuerySequence>
@@ -788,6 +788,25 @@
         <omniDataTransformationId>0kdbm000000moCH</omniDataTransformationId>
         <outputCreationSequence>0.0</outputCreationSequence>
         <outputFieldName>Quote:QLG:Line</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>NOT LIKE</filterOperator>
+        <filterValue>&apos;Schedule&apos;</filterValue>
+        <globalKey>ee927f04-2b14-4140-873b-1e0890ee928a</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>QuoteLineGroup</inputObjectName>
+        <inputObjectQuerySequence>4.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CustomerQuoteExtract</name>
+        <omniDataTransformation>0kdbm000000nM7R</omniDataTransformation>
+        <omniDataTransformationId>0kdbm000000nM7R</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Quote:QLG</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
